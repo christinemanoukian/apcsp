@@ -12,7 +12,7 @@ sales_tax = .0825
 customer_total = 0
 customer_itemization = '' 
 
-item = input('Do you want a loveseat, an armchair, or a table?')
+item = input('Do you want a loveseat, an armchair, or a table? ')
 if item == 'loveseat':
     customer_total += lovely_loveseat_price
     customer_itemization += lovely_loveseat_description
@@ -22,3 +22,8 @@ if item == 'armchair':
 if item == 'table':
     customer_total += lovely_table_price
     customer_itemization += lovely_table_description
+
+customer_total += customer_total*sales_tax
+
+print('Your total is ' + str(customer_total))
+print('Here is the breakdown: ' + customer_itemization)
