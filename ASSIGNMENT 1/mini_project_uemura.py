@@ -136,6 +136,7 @@ def input_strat(board):
     if move == '9':
         return (0,2)
 
+
 def random_strategy_function(state):
     board = [state[i:i+3] for i in range(0,9,3)]
     
